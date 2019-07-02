@@ -8,11 +8,5 @@
   },
   "git": {
     "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
-  },
-  "plugins": {
-    "@release-it/conventional-changelog": {
-      "preset": "angular",
-      "infile": "CCHANGELOG.md"
-    }
   }
 }
