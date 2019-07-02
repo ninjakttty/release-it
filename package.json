@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "release-it"
+    "release": "release-it",
+    "feat": "export FEATURE=feature-$RANDOM ;  git flow feature start $FEATURE   && echo $FEATURE >> test.txt &&  git add . && git commit -am $FEATURE ; git flow feature finish $FEATURE"
   },
   "repository": {
     "type": "git",
