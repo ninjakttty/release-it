@@ -1,6 +1,6 @@
 {
   "name": "release-it-script",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,8 @@
       "before:release": "npx auto-changelog -p"
     },
     "git": {
-      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
+      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
+      "tag": false
     },
     "npm": {
       "publish": false
