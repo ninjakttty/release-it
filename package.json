@@ -1,6 +1,6 @@
 {
   "name": "release-it-script",
-  "version": "3.0.1",
+  "version": "6.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "release-it": {
     "github": {
-      "release": true
+      "release": false
     },
     "hooks": {
       "before:release": "npx auto-changelog -p"
