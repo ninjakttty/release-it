@@ -1,0 +1,24 @@
+{
+  "name": "release-it-script",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninjakttty/release-it.git"
+  },
+  "keywords": [],
+  "author": "Yuri A. Parsons <yuri@ninjakitty.net> (http://ninjakitty.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninjakttty/release-it/issues"
+  },
+  "homepage": "https://github.com/ninjakttty/release-it#readme",
+  "devDependencies": {
+    "release-it": "~12.3.0"
+  }
+}
