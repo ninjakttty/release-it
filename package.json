@@ -27,7 +27,16 @@
   },
   "release-it": {
     "github": {
-      "release": false
+      "release": true,
+      "releaseName": "Release ${version}",
+      "releaseNotes": null,
+      "preRelease": false,
+      "draft": false,
+      "tokenRef": "73f2ad59905809bb65f947fc0666a200c4012acf",
+      "assets": null,
+      "host": null,
+      "timeout": 0,
+      "proxy": null
     },
     "hooks": {
       "before:release": "npx auto-changelog -p"
