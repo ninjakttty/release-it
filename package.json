@@ -43,7 +43,8 @@
     },
     "git": {
       "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
-      "tag": false
+      "tag": false,
+      "git.requireUpstream": false
     },
     "npm": {
       "publish": false
