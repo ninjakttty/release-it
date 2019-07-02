@@ -41,7 +41,7 @@
       "proxy": null
     },
     "hooks": {
-      "before:release": "git config   --get push.default; npx auto-changelog -p",
+      "before:release": "npx auto-changelog -p",
       "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
     },
     "git": {
