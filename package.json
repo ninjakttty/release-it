@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "release-it"
+    "release": "release-it",
+    "feat": "export FEATURE=feature-$RANDOM ;  git flow feature start $FEATURE   && echo $FEATURE >> test.txt &&  git add . && git commit -am $FEATURE ; git flow feature finish $FEATURE"
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,23 @@
   },
   "release-it": {
     "github": {
-      "release": false
+      "release": true,
+      "releaseName": "Release ${version}",
+      "releaseNotes": null,
+      "preRelease": false,
+      "draft": false,
+      "assets": null,
+      "host": null,
+      "timeout": 0,
+      "proxy": null
     },
     "hooks": {
       "before:release": "npx auto-changelog -p"
     },
     "git": {
       "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
-      "tag": false
+      "tag": false,
+      "git.requireUpstream": false
     },
     "npm": {
       "publish": false
