@@ -1,6 +1,6 @@
 {
   "name": "release-it-script",
-  "version": "14.0.1",
+  "version": "15.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -41,7 +41,7 @@
       "proxy": null
     },
     "hooks": {
-      "before:release": "git config   --get push.default; npx auto-changelog -p",
+      "before:release": "npx auto-changelog -p",
       "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
     },
     "git": {
