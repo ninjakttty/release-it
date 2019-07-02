@@ -1,6 +1,10 @@
 {
-  "hooks": {
-    "before:release": "npx auto-changelog -p"
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "Release ${version}"
   },
   "git": {
     "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
