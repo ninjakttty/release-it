@@ -33,7 +33,6 @@
       "releaseNotes": null,
       "preRelease": false,
       "draft": false,
-      "tokenRef": "40b9ff6994894c60d224cff1e011e8934b780234",
       "assets": null,
       "host": null,
       "timeout": 0,
@@ -44,7 +43,8 @@
     },
     "git": {
       "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
-      "tag": false
+      "tag": false,
+      "git.requireUpstream": false
     },
     "npm": {
       "publish": false
