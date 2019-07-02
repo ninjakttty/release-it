@@ -1,0 +1,5 @@
+{
+  "git": {
+    "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
+  }
+}
