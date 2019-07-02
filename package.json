@@ -1,6 +1,6 @@
 {
   "name": "release-it-script",
-  "version": "9.0.3",
+  "version": "9.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -41,7 +41,7 @@
       "proxy": null
     },
     "hooks": {
-      "before:release": "npx auto-changelog -p",
+      "before:release": "npx auto-changelog -p; git flow release start ${version}",
       "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
     },
     "git": {
