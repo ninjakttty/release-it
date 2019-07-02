@@ -5,5 +5,14 @@
   "github": {
     "release": true,
     "releaseName": "Release ${version}"
+  },
+  "git": {
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template ./changelog.hbs"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CCHANGELOG.md"
+    }
   }
 }
