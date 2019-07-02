@@ -24,5 +24,19 @@
   },
   "dependencies": {
     "auto-changelog": "~1.13.0"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    },
+    "hooks": {
+      "before:release": "npx auto-changelog -p"
+    },
+    "git": {
+      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
+    },
+    "npm": {
+      "publish": false
+    }
   }
 }
