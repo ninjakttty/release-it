@@ -41,7 +41,7 @@
       "proxy": null
     },
     "hooks": {
-      "before:release": "npx auto-changelog -p; git flow release start ${version}",
+      "before:release": "npx auto-changelog -p",
       "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
     },
     "git": {
