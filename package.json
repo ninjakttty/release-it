@@ -1,11 +1,13 @@
 {
   "name": "release-it-script",
-  "version": "3.0.1",
+  "version": "9.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "release-it"
+    "release-it": "release-it",
+    "gen-release": "generate-release",
+    "feat": "export FEATURE=feature-$RANDOM ;  git flow feature start $FEATURE   && echo $FEATURE >> test.txt &&  git add . && git commit -am $FEATURE ; git flow feature finish $FEATURE  ; echo PR COMPLETED: $FEATURE "
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/ninjakttty/release-it#readme",
   "devDependencies": {
     "@release-it/conventional-changelog": "~1.1.0",
+    "generate-release": "~1.1.1",
     "release-it": "~12.3.0"
   },
   "dependencies": {
@@ -27,14 +30,23 @@
   },
   "release-it": {
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "Release ${version}",
+      "releaseNotes": null,
+      "preRelease": false,
+      "draft": false,
+      "assets": null,
+      "host": null,
+      "timeout": 0,
+      "proxy": null
     },
     "hooks": {
       "before:release": "npx auto-changelog -p"
     },
     "git": {
       "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
-      "tag": false
+      "tag": false,
+      "git.requireUpstream": false
     },
     "npm": {
       "publish": false
