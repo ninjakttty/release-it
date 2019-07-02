@@ -33,7 +33,8 @@
       "before:release": "npx auto-changelog -p"
     },
     "git": {
-      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs"
+      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template ./preview.hbs",
+      "tag": false
     },
     "npm": {
       "publish": false
