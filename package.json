@@ -20,5 +20,8 @@
   "homepage": "https://github.com/ninjakttty/release-it#readme",
   "devDependencies": {
     "release-it": "~12.3.0"
+  },
+  "dependencies": {
+    "auto-changelog": "~1.13.0"
   }
 }
