@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/ninjakttty/release-it#readme",
   "devDependencies": {
-    "@release-it/conventional-changelog": "~1.1.0",
+    "@release-it/conventional-changelog": "~1.1.4",
     "generate-release": "~1.1.1",
-    "release-it": "~12.3.0"
+    "release-it": "~15.6.0"
   },
   "dependencies": {
     "auto-changelog": "~1.13.0"
